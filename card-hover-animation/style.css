@@ -37,6 +37,7 @@ body {
   box-shadow: 0 0 60px 3px #f1c40f;
   right: 300px;
   transition: 0.5s ease-out;
+  z-index: 2;
 }
 
 .card::after {
