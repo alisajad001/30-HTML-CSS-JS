@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1442da 0%, #bb09d3 100%);
+  overflow: hidden;
+}
+
+img {
+  position: absolute;
+  background-size: contain;
+  top: 50%;
+  left: 50%;
+  transform: translate(var(--x), var(--y));
+  animation: fallDown 1s alternate;
+  filter: brightness(0) invert(1);
+}
+
+/* Fall down animation */
+
+@keyframes fallDown {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-50%, 200%) rotate(45deg);
+    opacity: 0;
+  }
+}
