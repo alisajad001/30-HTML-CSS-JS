@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-body: #151515;
+  --border: #3dc9f3;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-body);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+  width: 100px;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 50px;
+  outline: none;
+  transition: 0.3s;
+  background-color: rgb(100, 100, 100);
+  color: #fff;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+input:focus {
+  width: 400px;
+  border: 2px solid #3dc9f3;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
