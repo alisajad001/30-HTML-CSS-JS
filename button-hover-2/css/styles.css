@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--body-bg);
+}
+
+:root {
+  --font-family: "Karla", sans-serif;
+  --body-bg: #1e1f25;
+  --btn-bg: #000;
+  --btn-color: #cbcbcb;
+  --btn-color-hover: #fff;
+  --grad-color1: #eeaf61;
+  --grad-color2: #fb9062;
+  --grad-color3: #ee5d6c;
+  --grad-color4: #ce4993;
+  --grad-color5: #6a0d83;
+}
+
+.container {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-border {
+  background-image: linear-gradient(
+    to right,
+    #6a0d83,
+    #fb9062,
+    #ee5d6c,
+    #ce4993,
+    #6a0d83
+  );
+  padding: 5px;
+  background-size: 150%;
+  background-position: 100%;
+  transition: 700ms;
+}
+
+.button {
+  padding: 1em 2em;
+  font-size: 1.8rem;
+  border: 0;
+  background-color: #000;
+  color: var(--btn-color);
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-border:hover {
+  background-image: linear-gradient(
+    to left,
+    #6a0d83,
+    #fb9062,
+    #ee5d6c,
+    #ce4993,
+    #6a0d83
+  );
+  background-position: 310%;
+}
+
+.button-border:hover .button {
+  padding: 1.1em 2.1em;
+  color: var(--btn-color-hover);
+}
