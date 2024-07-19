@@ -1,0 +1,35 @@
+:root {
+  --black: #141414;
+  --red: #fa3a3a;
+  --green: #2bd62b;
+  --flag-height: 150px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+}
+
+.flag-afg {
+  height: var(--flag-height);
+  width: calc(var(--flag-height) * 3 / 2);
+  margin: auto;
+  display: flex;
+}
+
+.stripe {
+  flex-grow: 1;
+  background-color: red;
+}
+
+.black {
+  background-color: var(--black);
+}
+
+.red {
+  background-color: var(--red);
+}
+
+.green {
+  background-color: var(--green);
+}
