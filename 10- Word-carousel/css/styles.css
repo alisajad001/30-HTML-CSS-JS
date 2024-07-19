@@ -1,0 +1,46 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h1::after {
+  content: "Coding";
+  background-color: blue;
+  margin-left: 10px;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  animation: carousel 6s infinite;
+}
+
+@keyframes carousel {
+  0% {
+    content: "Coding";
+  }
+
+  25% {
+    content: "Mom";
+  }
+
+  50% {
+    content: "Dad";
+  }
+
+  75% {
+    content: "Cats";
+  }
+
+  100% {
+    content: "Coding";
+  }
+}
