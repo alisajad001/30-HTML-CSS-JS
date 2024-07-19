@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #f35555;
+  animation: rotate infinite 1.2s;
+  transform: rotate(45deg);
+}
+
+.dot:nth-child(1) {
+  background-color: #f35555;
+}
+
+.dot:nth-child(2) {
+  background-color: #558cf3;
+}
+
+.dot:nth-child(3) {
+  background-color: #58f03a;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-45deg);
+  }
+
+  to {
+    transform: rotate(45deg);
+  }
+}
