@@ -15,5 +15,6 @@ In this repository, you will find a collection of 30 projects that focus on HTML
 - **Project 9**: Loading Animation 2
 - **Project 10**: Word Carousel Animation
 - **Project 11**: Afghanistan Flag
+- **Project 12**: Toggle Switch
 
 Happy coding!
